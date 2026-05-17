@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Do Dham Yatra",
+    "destination": "Kedarnath & Badrinath",
+    "tag": "Instagram Reel",
+    "gradient": "from-[#12385b] via-[#0f8fbf] to-[#f4c76f]",
+    "image": "/images/reels/do-dham-yatra.jpg",
+    "url": "https://www.instagram.com/reel/DYSiKULBEBv/"
+  },
+  {
+    "title": "Himachal Dreams",
+    "destination": "Manali, Kasol, Kullu",
+    "tag": "Instagram Reel",
+    "gradient": "from-sky-200 via-cyan-400 to-slate-900",
+    "image": "/images/reels/himachal-dreams.jpg",
+    "url": "https://www.instagram.com/reel/DYSh0LhBDuW/"
+  },
+  {
+    "title": "Gokarna Dandeli",
+    "destination": "Adventure & Island Vibes",
+    "tag": "Instagram Reel",
+    "gradient": "from-cyan-200 via-blue-500 to-emerald-700",
+    "image": "/images/reels/gokarna-dandeli.jpg",
+    "url": "https://www.instagram.com/reel/DXUvPBMhdmT/"
+  },
+  {
+    "title": "Ooty Isha Coonoor",
+    "destination": "Nature Retreat",
+    "tag": "Instagram Reel",
+    "gradient": "from-emerald-200 via-teal-500 to-[#12385b]",
+    "image": "/images/reels/ooty-isha-coonoor.jpg",
+    "url": "https://www.instagram.com/reel/DXUu9GqBrtP/"
+  }
+]

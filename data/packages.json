@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Kashmir Paradise",
+    "duration": "6N / 7D",
+    "price": "INR 14,999",
+    "season": "Snow Season",
+    "featured": true,
+    "image": "Kashmir Snow Placeholder",
+    "imagePath": "/images/packages/kashmir-paradise.jpg",
+    "highlights": ["Comfortable stay", "Train fares", "Local transport", "Pickup and drop", "Sightseeing included"]
+  },
+  {
+    "title": "Manali Himachal Dreams",
+    "duration": "6D / 5N",
+    "price": "INR 13,000",
+    "season": "Peak Season",
+    "featured": true,
+    "image": "Manali Snow Placeholder",
+    "imagePath": "/images/packages/manali-himachal-dreams.jpg",
+    "highlights": ["Accommodation", "Transportation", "Food included", "Snow points visit", "Kasol and Kullu exploration"]
+  },
+  {
+    "title": "Do Dham Yatra",
+    "duration": "7D / 6N",
+    "price": "INR 13,999",
+    "season": "Spiritual Package",
+    "featured": true,
+    "image": "Kedarnath Badrinath Placeholder",
+    "imagePath": "/images/packages/do-dham-yatra.jpg",
+    "highlights": ["Train tickets included", "Accommodation", "Transportation", "Food included", "Do Dham darshan"]
+  },
+  {
+    "title": "Ooty Isha Coonoor Retreat",
+    "duration": "Short break",
+    "price": "INR 7,999",
+    "season": "Limited Slots",
+    "featured": false,
+    "image": "Ooty Coonoor Placeholder",
+    "imagePath": "/images/packages/ooty-isha-coonoor.jpg",
+    "highlights": ["Comfortable stay", "Train fares", "Local transport", "Pickup and drop", "Sightseeing activities"]
+  },
+  {
+    "title": "Gokarna Dandeli Netrani",
+    "duration": "Weekend",
+    "price": "INR 11,999",
+    "season": "Adventure",
+    "featured": false,
+    "image": "Gokarna Dandeli Placeholder",
+    "imagePath": "/images/packages/gokarna-dandeli-netrani.jpg",
+    "highlights": ["Comfortable stay", "Train fares", "Local transport", "Professional guide", "Activities included"]
+  },
+  {
+    "title": "Coorg Chikmagalur Escape",
+    "duration": "3D / 2N",
+    "price": "INR 6,499",
+    "season": "Nature Getaway",
+    "featured": false,
+    "image": "Coorg Chikmagalur Placeholder",
+    "imagePath": "/images/packages/coorg-chikmagalur.jpg",
+    "highlights": ["Comfortable stay", "Train fares", "Local transport", "Delicious food", "Sightseeing included"]
+  }
+]

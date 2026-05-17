@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Divine Do Dham Yatra",
+    "category": "Spiritual Package",
+    "price": "INR 13,999",
+    "duration": "7D / 6N",
+    "tag": "Limited seats",
+    "description": "Kedarnath Temple and Badrinath Temple journey with train tickets, accommodation, food, transport, darshan support, and local sightseeing.",
+    "highlights": [
+      "Train tickets included",
+      "Accommodation",
+      "Transportation",
+      "Food included",
+      "Do Dham darshan",
+      "Trip assistance throughout"
+    ],
+    "palette": "from-[#12385b] via-[#0f8fbf] to-[#f4c76f]",
+    "image": "/images/offers/divine-do-dham-yatra.jpg"
+  },
+  {
+    "title": "Himachal Dreams",
+    "category": "Upcoming Long Weekend",
+    "price": "INR 13,000",
+    "duration": "6D / 5N",
+    "tag": "Peak season",
+    "description": "Explore Manali, Kasol, Kullu, Shimla, Solang Valley, snow points, mall road evenings, and mountain adventure views.",
+    "highlights": [
+      "Accommodation",
+      "Transportation",
+      "Food included",
+      "Sightseeing",
+      "Snow points visit",
+      "Kasol and Kullu exploration"
+    ],
+    "palette": "from-sky-300 via-cyan-500 to-indigo-900",
+    "image": "/images/offers/himachal-dreams.jpg"
+  },
+  {
+    "title": "Gokarna Dandeli Netrani",
+    "category": "Adventure Escape",
+    "price": "INR 11,999",
+    "duration": "Weekend",
+    "tag": "Adventure slots",
+    "description": "Beaches, adventure, island vibes, comfortable stay, train fares, local transport, food, guide support, and included activities.",
+    "highlights": [
+      "Comfortable stay",
+      "Train fares",
+      "Local transport",
+      "Pickup and drop",
+      "Professional guide",
+      "Activities included"
+    ],
+    "palette": "from-cyan-300 via-blue-500 to-emerald-500",
+    "image": "/images/offers/gokarna-dandeli-netrani.jpg"
+  },
+  {
+    "title": "Ooty Isha Coonoor Retreat",
+    "category": "Seasonal Retreat",
+    "price": "INR 7,999",
+    "duration": "Short break",
+    "tag": "First 50 slots",
+    "description": "A scenic retreat across Ooty, Isha Yoga Center, and Coonoor with toy train availability for early slots.",
+    "highlights": [
+      "Comfortable stay",
+      "Train fares",
+      "Local transport",
+      "Pickup and drop",
+      "Sightseeing and activities",
+      "No hidden charges"
+    ],
+    "palette": "from-emerald-300 via-teal-500 to-[#12385b]",
+    "image": "/images/offers/ooty-isha-coonoor-retreat.jpg"
+  }
+]

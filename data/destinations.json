@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Kashmir",
+    "description": "Snow-dusted valleys, houseboat evenings, Gulmarg views, and postcard silence.",
+    "duration": "6N / 7D",
+    "price": "From INR 14,999",
+    "mood": "Himalayan Paradise",
+    "palette": "from-sky-300 via-slate-200 to-emerald-300",
+    "image": "/images/destinations/kashmir.jpg"
+  },
+  {
+    "title": "Manali",
+    "description": "Snow points, Solang Valley, Kasol, Kullu, Shimla, and mountain days with friends.",
+    "duration": "6D / 5N",
+    "price": "From INR 13,000",
+    "mood": "Peak Season Escape",
+    "palette": "from-sky-300 via-cyan-500 to-indigo-900",
+    "image": "/images/destinations/manali.jpg"
+  },
+  {
+    "title": "Do Dham Yatra",
+    "description": "Kedarnath and Badrinath darshan with assisted travel, food, stay, and transport.",
+    "duration": "7D / 6N",
+    "price": "From INR 13,999",
+    "mood": "Spiritual Journey",
+    "palette": "from-[#12385b] via-[#0f8fbf] to-[#f4c76f]",
+    "image": "/images/destinations/do-dham-yatra.jpg"
+  },
+  {
+    "title": "Goa",
+    "description": "Golden beaches, hidden cafes, boutique stays, and the soft chaos of celebration.",
+    "duration": "3N / 4D",
+    "price": "From INR 14,999",
+    "mood": "Coastal Weekend",
+    "palette": "from-orange-300 via-rose-400 to-blue-500",
+    "image": "/images/destinations/goa.jpg"
+  },
+  {
+    "title": "Gokarna Dandeli",
+    "description": "Beaches, river adventure, Netrani island vibes, guides, food, and group energy.",
+    "duration": "Weekend",
+    "price": "From INR 11,999",
+    "mood": "Adventure Escape",
+    "palette": "from-cyan-300 via-blue-500 to-emerald-500",
+    "image": "/images/destinations/gokarna-dandeli.jpg"
+  },
+  {
+    "title": "Ooty Coonoor",
+    "description": "Toy train moments, tea gardens, Isha Yoga Center, misty roads, and scenic calm.",
+    "duration": "Short Break",
+    "price": "From INR 7,999",
+    "mood": "Hill Retreat",
+    "palette": "from-emerald-300 via-teal-500 to-[#12385b]",
+    "image": "/images/destinations/ooty-coonoor.jpg"
+  },
+  {
+    "title": "Ladakh",
+    "description": "High passes, blue lakes, monastery mornings, and once-in-a-lifetime road memories.",
+    "duration": "6N / 7D",
+    "price": "Custom Quote",
+    "mood": "High-Altitude Adventure",
+    "palette": "from-amber-200 via-sky-400 to-slate-900",
+    "image": "/images/destinations/ladakh.jpg"
+  }
+]
