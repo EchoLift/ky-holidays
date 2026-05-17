@@ -2,9 +2,36 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "KY Holidays | Premium Travel Agency Hyderabad",
   description:
     "KY Holidays is a premium travel agency in Hyderabad for India tour packages, Kashmir packages, Manali packages, Do Dham Yatra, Goa trips, family tours, spiritual packages, and budget travel packages.",
+  icons: {
+    icon: "/ky-logo.PNG",
+    shortcut: "/ky-logo.PNG",
+    apple: "/ky-logo.PNG",
+  },
+  openGraph: {
+    title: "KY Holidays | Premium Travel Agency Hyderabad",
+    description:
+      "Plan India trips, Kashmir packages, Manali packages, Do Dham Yatra, Goa trips, family tours, spiritual packages, and budget travel packages with KY Holidays.",
+    images: [
+      {
+        url: "/ky-logo.PNG",
+        width: 1200,
+        height: 630,
+        alt: "KY Holidays",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KY Holidays | Premium Travel Agency Hyderabad",
+    description:
+      "Plan premium India trips, family tours, spiritual packages, and budget travel packages with KY Holidays.",
+    images: ["/ky-logo.PNG"],
+  },
   keywords: [
     "Travel agency Hyderabad",
     "India tour packages",

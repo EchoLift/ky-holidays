@@ -19,7 +19,6 @@ import {
   Plane,
   Play,
   ShieldCheck,
-  Sparkles,
   Star,
   Users,
   WalletCards,
@@ -311,8 +310,15 @@ export function TravelLanding({
       <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-[#05070d]/55 backdrop-blur-2xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8">
           <a href="#top" onClick={() => setMobileMenuOpen(false)} className="group flex items-center gap-3">
-            <span className="grid size-11 place-items-center rounded-full border border-[#f4c76f]/35 bg-[#f4c76f]/10 text-[#f4c76f]">
-              <Sparkles size={18} />
+            <span className="relative size-11 overflow-hidden rounded-full border border-[#f4c76f]/35 bg-black shadow-[0_0_24px_rgba(244,199,111,0.18)]">
+              <Image
+                src="/ky-logo.PNG"
+                alt="KY Holidays logo"
+                fill
+                sizes="44px"
+                className="object-cover"
+                priority
+              />
             </span>
             <span>
               <span className="block text-sm font-black uppercase tracking-[0.28em]">KY Holidays</span>
