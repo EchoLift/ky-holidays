@@ -492,14 +492,22 @@ export function TravelLanding({
               transition={{ duration: 0.65, delay: index * 0.04 }}
               variants={fadeUp}
             >
-              <MediaVisual
-                alt={`${destination.title} travel package`}
-                image={destination.image}
-                label={destination.title}
-                palette={destination.palette}
-                className="absolute inset-0 transition duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,6,12,0.95),rgba(3,6,12,0.18)_58%,rgba(3,6,12,0.28))]" />
+              {destination.image ? (
+                <Image
+                  src={destination.image}
+                  alt={`${destination.title} travel package`}
+                  fill
+                  sizes={index === 0 ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 768px) 100vw, 25vw"}
+                  className="object-cover opacity-88 transition duration-700 group-hover:scale-110 group-hover:opacity-100"
+                />
+              ) : (
+                <PlaceholderVisual
+                  label={destination.title}
+                  palette={destination.palette}
+                  className="absolute inset-0 transition duration-700 group-hover:scale-110"
+                />
+              )}
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,6,12,0.06)_0%,rgba(3,6,12,0.18)_36%,rgba(3,6,12,0.86)_72%,rgba(3,6,12,0.97)_100%),linear-gradient(90deg,rgba(3,6,12,0.68),rgba(3,6,12,0.08)_48%,rgba(3,6,12,0.42))]" />
               <div className="relative flex h-full min-h-[420px] flex-col justify-end p-6">
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.28em] text-[#f4c76f]">{destination.mood}</p>
                 <h3 className="text-4xl font-black">{destination.title}</h3>
