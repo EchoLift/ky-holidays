@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
+  ArrowLeft,
   ArrowRight,
   BadgeCheck,
   CalendarDays,
@@ -20,7 +21,6 @@ import {
   Play,
   ShieldCheck,
   Star,
-  Users,
   WalletCards,
   X,
 } from "lucide-react";
@@ -295,6 +295,7 @@ export function TravelLanding({
   const { scrollYProgress } = useScroll();
   const heroY = useTransform(scrollYProgress, [0, 0.3], [0, 120]);
   const storyY = useTransform(scrollYProgress, [0.18, 0.58], [80, -80]);
+  const activeReview = testimonials[activeTestimonial];
 
   function handleInquiry(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -312,7 +313,7 @@ export function TravelLanding({
           <a href="#top" onClick={() => setMobileMenuOpen(false)} className="group flex items-center gap-3">
             <span className="relative size-11 overflow-hidden rounded-full border border-[#f4c76f]/35 bg-black shadow-[0_0_24px_rgba(244,199,111,0.18)]">
               <Image
-                src="/ky-logo.PNG"
+                src="/ky-logo.png"
                 alt="KY Holidays logo"
                 fill
                 sizes="44px"
@@ -790,35 +791,51 @@ export function TravelLanding({
             copy="Testimonials are intentionally high-contrast and elegant, helping visitors feel both desire and confidence."
           />
         </div>
-        <div className="relative mx-auto grid max-w-6xl gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="rounded-[2rem] border border-white/10 bg-white/8 p-6 backdrop-blur-xl">
-            {testimonials.map((testimonial, index) => (
-              <button
-                key={testimonial.name}
-                onClick={() => setActiveTestimonial(index)}
-                className={`mb-3 flex w-full items-center justify-between rounded-2xl px-4 py-4 text-left transition ${activeTestimonial === index ? "bg-white text-[#071017]" : "bg-white/6 text-white/68 hover:bg-white/10"}`}
-              >
-                <span>
-                  <span className="block font-black">{testimonial.name}</span>
-                  <span className="text-sm opacity-70">{testimonial.trip}</span>
-                </span>
-                <Users size={17} />
-              </button>
-            ))}
-          </div>
+        <div className="relative mx-auto max-w-5xl">
           <motion.div
             key={activeTestimonial}
-            className="rounded-[2rem] border border-[#f4c76f]/20 bg-[linear-gradient(135deg,rgba(255,255,255,0.14),rgba(255,255,255,0.05))] p-8 shadow-2xl backdrop-blur-2xl sm:p-12"
+            className="min-h-[430px] rounded-[2rem] border border-[#f4c76f]/24 bg-[linear-gradient(135deg,rgba(255,255,255,0.16),rgba(255,255,255,0.06))] p-8 shadow-2xl backdrop-blur-2xl sm:p-12 lg:p-14"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45 }}
           >
             <div className="mb-8 flex text-[#f4c76f]">
-              {Array.from({ length: testimonials[activeTestimonial].rating }).map((_, index) => <Star key={index} fill="currentColor" />)}
+              {Array.from({ length: activeReview.rating }).map((_, index) => <Star key={index} fill="currentColor" />)}
             </div>
-            <p className="text-pretty text-3xl font-black leading-tight sm:text-5xl">&ldquo;{testimonials[activeTestimonial].quote}&rdquo;</p>
-            <p className="mt-8 text-sm font-bold uppercase tracking-[0.26em] text-white/46">{testimonials[activeTestimonial].trip}</p>
+            <p className="text-pretty text-3xl font-black leading-tight sm:text-5xl">&ldquo;{activeReview.quote}&rdquo;</p>
+            <div className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+              <p className="text-sm font-bold uppercase tracking-[0.26em] text-white/46">{activeReview.trip}</p>
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  aria-label="Previous review"
+                  onClick={() => setActiveTestimonial((index) => (index === 0 ? testimonials.length - 1 : index - 1))}
+                  className="grid size-12 place-items-center rounded-full border border-white/14 bg-white/8 text-white transition hover:bg-white hover:text-[#071017]"
+                >
+                  <ArrowLeft size={18} />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next review"
+                  onClick={() => setActiveTestimonial((index) => (index + 1) % testimonials.length)}
+                  className="grid size-12 place-items-center rounded-full border border-white/14 bg-white/8 text-white transition hover:bg-white hover:text-[#071017]"
+                >
+                  <ArrowRight size={18} />
+                </button>
+              </div>
+            </div>
           </motion.div>
+          <div className="mt-6 flex justify-center gap-2">
+            {testimonials.map((testimonial, index) => (
+              <button
+                key={testimonial.trip}
+                type="button"
+                aria-label={`Show review ${index + 1}`}
+                onClick={() => setActiveTestimonial(index)}
+                className={`h-2.5 rounded-full transition ${activeTestimonial === index ? "w-10 bg-[#f4c76f]" : "w-2.5 bg-white/26 hover:bg-white/50"}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 

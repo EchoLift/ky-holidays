@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   description:
     "KY Holidays is a premium travel agency in Hyderabad for India tour packages, Kashmir packages, Manali packages, Do Dham Yatra, Goa trips, family tours, spiritual packages, and budget travel packages.",
   icons: {
-    icon: "/ky-logo.PNG",
-    shortcut: "/ky-logo.PNG",
-    apple: "/ky-logo.PNG",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/ky-logo.png",
   },
   openGraph: {
     title: "KY Holidays | Premium Travel Agency Hyderabad",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Plan India trips, Kashmir packages, Manali packages, Do Dham Yatra, Goa trips, family tours, spiritual packages, and budget travel packages with KY Holidays.",
     images: [
       {
-        url: "/ky-logo.PNG",
+        url: "/ky-logo.png",
         width: 1200,
         height: 630,
         alt: "KY Holidays",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "KY Holidays | Premium Travel Agency Hyderabad",
     description:
       "Plan premium India trips, family tours, spiritual packages, and budget travel packages with KY Holidays.",
-    images: ["/ky-logo.PNG"],
+    images: ["/ky-logo.png"],
   },
   keywords: [
     "Travel agency Hyderabad",
