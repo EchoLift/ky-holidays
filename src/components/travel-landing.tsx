@@ -313,7 +313,7 @@ export function TravelLanding({
           <a href="#top" onClick={() => setMobileMenuOpen(false)} className="group flex items-center gap-3">
             <span className="relative size-11 overflow-hidden rounded-full border border-[#f4c76f]/35 bg-black shadow-[0_0_24px_rgba(244,199,111,0.18)]">
               <Image
-                src="/ky-logo.png"
+                src="/icon.png"
                 alt="KY Holidays logo"
                 fill
                 sizes="44px"
